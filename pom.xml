@@ -80,7 +80,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>spark.sop_read_api</mainClass>
+              <mainClass>spark.BitcoinDataApi</mainClass>
             </manifest>
           </archive>
         </configuration>
