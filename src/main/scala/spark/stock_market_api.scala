@@ -18,7 +18,8 @@ object stock_market_api {
       import spark.implicits._
 
       // API details
-      val apiUrl = "https://financialmodelingprep.com/api/v3/stock/full/real-time-price?apikey=gALCXhaqkWuEhIhyrQTqqsxwdoVtKD7I"
+      //val apiUrl = "https://financialmodelingprep.com/api/v3/stock/full/real-time-price?apikey=gALCXhaqkWuEhIhyrQTqqsxwdoVtKD7I"
+      val apiUrl = "https://financialmodelingprep.com/api/v3/stock/full/real-time-price/BTCUSD?apikey=gALCXhaqkWuEhIhyrQTqqsxwdoVtKD7I"
       val response = get(apiUrl)
       val jsonResponse = response.text()
       // Parse JSON response
