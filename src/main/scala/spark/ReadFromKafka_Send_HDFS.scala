@@ -44,8 +44,8 @@ object ReadFromKafka_Send_HDFS {
     // Write the DataFrame as CSV files to HDFS, partitioned by formatted timestamp
     df.writeStream
       .format("csv")
-      .option("checkpointLocation", "/tmp/bigdata_nov_2024/sujay/stock_data/checkpoint")
-      .option("path", "/tmp/bigdata_nov_2024/sujay/stock_data/data")
+      .option("checkpointLocation", "/tmp/bigdata_nov_2024/project2024/scala/checkpoint")
+      .option("path", "/tmp/bigdata_nov_2024/project2024/scala/data")
       .start()
       .awaitTermination()
   }
